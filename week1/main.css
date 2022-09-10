@@ -43,3 +43,17 @@ nav ul li a{
     position: relative;
 }
 
+.header-text   {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #e27662b6;
+}
+
