@@ -1,44 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
- }
-
- body {
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif; 
- }
-
- header {
-    font-family: 'Lora';
-    width: 50%;
-    height: 100vh;
-    
- }
-
- .container {
-    padding: 10px 10%;
- }
-
- nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+html {
+  display: grid;
+  justify-content: center;
+  padding: 0;
+  background-color: #000;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  
+}
+
+h1 {
+  font-family: 'Lora';
+  color: #333;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Lora';
+  color: #333;
+}
+header {
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  grid-area: header;
+  
+}
+
+
+/*Links*/
+
+
+
+header h1 a:link {
+  color:#333;
+  
+}
+
+header h1 a:visited {
+  color:#333;
+}
+
+header h1 a:hover {
+  color: #333;
+  
+}
+
+header h1 a:active {
+  color: #333;
+  
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00ddff;
+  text-decoration: none;
+}
+
+.post-content h2 a:link {
+  color:black
+}
+
+.post-content h2 a:visited {
+  color: black;
+}
+
+.post-content h2 a:active {
+  color:#DEB887;
+}
+
+.post-content h2 a:hover {
+  color: #333;
+}
+
+
+
+nav {
+  color: #d0d0d0;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 nav ul li {
-    display: inline-block;
-   list-style:inside;
-    margin: 10px 20px;
+  list-style: none;
+  
+ 
 }
 
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+.post-date {
+  text-align: right;
+  border-bottom-style: solid;
+  border-color: #d0d0d0;
+}
+
+/*Images*/
+
+img {
+  text-align: center;
+  width: 90%;
+  margin-top: 30px;
 }
