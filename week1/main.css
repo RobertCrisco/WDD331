@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   display: grid;
   justify-content: center;
@@ -7,20 +14,25 @@ html {
   background-color: #000;
 }
 
+
+
 body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  width: 300px;
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
+  text-align: center;
   
 }
+
+
 
 h1 {
   font-family: 'Lora';
   color: #333;
   text-decoration: none;
+  font-size: 2.1em; 
 }
 
 h2 {
@@ -28,11 +40,11 @@ h2 {
   color: #333;
 }
 header {
-  padding: 5px;
+  
   margin: 0;
   text-align: center;
-  grid-area: header;
-  
+  grid-area: header;  
+   
 }
 
 
@@ -101,25 +113,101 @@ nav {
   color: #d0d0d0;
   border-top-style: solid;
   border-bottom-style: solid;
-  text-align: center;
+  
   font-family: Arial, Helvetica, sans-serif;
 }
+
+nav ul {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
 nav ul li {
+  
   list-style: none;
+  font-size: 1em; 
+  font-weight: 600;
+
   
  
 }
 
 .post-date {
   text-align: right;
-  border-bottom-style: solid;
   border-color: #d0d0d0;
+  margin: 10px;
+  }
+
+.post-content {
+  text-align: left;
+  border-color: #d0d0d0;
+  border-bottom-style: solid;
+}  
+
+figure {
+  text-align: center;
 }
 
 /*Images*/
 
 img {
   text-align: center;
-  width: 90%;
+  width: 50%;
   margin-top: 30px;
 }
+
+
+
+/* Mobile Size */
+@media(min-width:600px) {
+
+
+  nav {
+    text-align: center;
+  }
+
+  .post-date {
+    text-align: right;
+    border-bottom-style: solid;
+    
+  }
+  
+
+}
+
+/* Desktop Size */
+
+@media(min-width:700px) {
+
+ 
+  nav {
+    text-align: right;    
+  }
+
+  nav ul li {
+    display: inline-block; 
+   
+  }
+
+  article {
+    display: flex;
+  }
+
+
+
+  .post-content {
+    
+    border-left-style: solid;
+    
+    
+  }
+
+  main {
+    width: 100%;
+  }
+
+   
+}
+  
+
+
+
