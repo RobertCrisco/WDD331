@@ -1,40 +1,41 @@
+$color_1: #333;
+$color_2: #666;
+$color_3: #DEB887;
+$color_4: #00ddff;
+$color_5: black;
+$font-family_1: Arial, Helvetica, sans-serif;
+$font-family_2: 'Lora';
+$background-color_1: #000;
+$background-color_2: #fff;
+
 @import "https://fonts.googleapis.com/css2?family=Lora&display=swap";
-/*Links*/
-/*Images*/
-/* Mobile Size */
-/* Desktop Size */
 
-@mixin heading-color {
-	color: #333;
+
+@mixing headings {
+    font-family: $font-family_2;
+	color: $color_1;
 }
 
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 html {
 	justify-content: center;
 	padding: 0;
-	background-color: #000;
+	background-color: $background-color_1;
 }
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #fff;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #333;
+	background-color: $background-color_2;
+	font-family: $font-family_1;
+	color: $color_1;
 	text-align: center;
 }
 h1 {
-	font-family: 'Lora';
-	@including heading-color;
+	@include headings;
 	text-decoration: none;
 	font-size: 70px;
 }
 h2 {
-	font-family: 'Lora';
-	@including heading-color;
+	@include headings;
 	font-size: 25px;
 }
 header {
@@ -44,33 +45,33 @@ header {
 	h1 {
 		a {
 			&:link {
-				@including heading-color;
+				color: $color_1;
 			}
 			&:visited {
-				@including heading-color;
+				color: $color_1;
 			}
 			&:hover {
-				@including heading-color;
+				color: $color_1;
 			}
 			&:active {
-				@including heading-color;
+				color: $color_1;
 			}
 		}
 	}
 }
 a {
-	color: #666;
+	color: $color_2;
 	text-decoration: none;
 	&:visited {
-		color: #666;
+		color: $color_2;
 		text-decoration: none;
 	}
 	&:active {
-		color: #DEB887;
+		color: $color_3;
 		text-decoration: none;
 	}
 	&:hover {
-		color: #00ddff;
+		color: $color_4;
 		text-decoration: none;
 	}
 }
@@ -78,16 +79,16 @@ a {
 	h2 {
 		a {
 			&:link {
-				color: black;
+				color: $color_5;
 			}
 			&:visited {
-				color: black;
+				color: $color_5;
 			}
 			&:active {
-				color: #DEB887;
+				color: $color_3;
 			}
 			&:hover {
-				color: #333;
+				color: $color_1;
 			}
 		}
 	}
@@ -101,9 +102,9 @@ nav {
 	border-top: solid 2px #d0d0d0;
 	border-bottom: solid 2px #d0d0d0;
 	ul {
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: $font-family_1;
 		li {
-			color: #333;
+			color: $color_1;
 			list-style: none;
 			font-size: 25px;
 			padding: 10px;
@@ -163,6 +164,4 @@ img {
 		display: inline-block;
 		border-bottom: solid 2px #d0d0d0;
 	}
-
-	
 }
