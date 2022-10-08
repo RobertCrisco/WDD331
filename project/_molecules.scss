@@ -12,10 +12,10 @@
 // Zen Garden Links converted to buttons
 .view-css,.css-resources,.zen-faq,.zen-submit,.zen-translations {
     float: left;
-  @include button-link;
+
 }
   
 .view-css:hover,.css-resources:hover,.zen-faq:hover,.zen-submit:hover,.zen-translations:hover {
-    @include button-hover;
+
 }
    
