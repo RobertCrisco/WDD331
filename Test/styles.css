@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url(https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap);
+p {
+  font-family: "Mountains of Christmas", cursive;
+}
+
+h2, h3, h4 {
+  font-family: "Tangerine";
+  margin: 0;
+  font-size: 6em;
+}
+
+a {
+  color: #F5624d;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #F5624d;
+  border-bottom: 1px solid #F5624d;
+}/*# sourceMappingURL=styles.css.map */
