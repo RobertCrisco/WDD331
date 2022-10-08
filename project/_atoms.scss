@@ -1,29 +1,87 @@
 @use 'variables' as *;
 
 
+@mixin header-text {
+  color: $color-brown;
+  font-family: $font-header;
+  font-size: 25px;
+  font-weight: bold;
+ }
 
-
-
-
-// Atom elements that will be commonly used.  The molecule will overwrite when needed.
-h1,
-h2,
-h3,
-h4 {
-  font-family: $fonts-header;
-  margin: 0;
+@mixin body-text {
+  color: $color-brown;
+  font-family: $font-body;
+  font-size: 25px;
+  font-weight: bold;
+  
 }
 
-h1 {
-    background: $brown;
-    color: $white;
-    font-weight: normal;
+@mixin button-link {
+  display:  inline-block; 
+ background-color: $color-greenMed;
+ color: $color-white;
+ border: 1px solid $color-white;
+ border-radius:5px;
+ margin-right: 10px;
+ padding: 10px 10px 10px 10px;
+ cursor: pointer;
+}
 
+@mixin button-hover {
+  background-color: $color-greenLit;
+  border: 1px solid $color-black;
+}
+
+
+h1,h2,h3,h4 {
+  @include header-text;
+}
+
+
+header {
+  background: $color-blue;
+  text-align: center;
+  
+}
+
+
+h1 {
+  background: $color-brown;
+  color: $color-white;
+  display:  inline-block; 
+  font-weight: normal;
+  font-size: 48px;
+  padding: 0.5em 1em;
+  
 }
 
 h2 {
-    color: $white;
-    font-weight: 900;
-    letter-spacing: 1px;
-
+  color: $color-greenLit;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75px;
+  padding: 0.5em;
+  
 }
+
+p {
+  @include body-text;
+  
+ }
+
+a {
+  @include body-text;
+  color: $color-blue;
+  text-decoration: none;
+ }
+
+
+ .view-css,.css-resources,.zen-faq,.zen-submit,.zen-translations {
+  float: left;
+@include button-link;
+}
+
+.view-css:hover,.css-resources:hover,.zen-faq:hover,.zen-submit:hover,.zen-translations:hover {
+  @include button-hover;
+ }
+ 
